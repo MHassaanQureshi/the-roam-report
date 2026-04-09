@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+:root {
+  --color-primary: #0053D4;
+  --color-secondary: #f59e0b;
+}
+body {
+  background-color:#F9F1E2;
+}
