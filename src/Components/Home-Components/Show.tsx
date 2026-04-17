@@ -1,22 +1,43 @@
-export default function Show(){
+interface items{
+   
+    number:string;
+    city:string;
+    date:string;
+    details:string;
+    image:string;
+}
+
+export default function Show(props:items){
     return(
         <>
-        <div className="w-full flex flex-row items-center justify-center align-middle border-t border-b border-dotted border-[#E9F9B2] text-[#E9F9B2] text-xl gap-10 mt-10 p-6 md:text-4xl">
+        <div className="w-full border-t border-dotted border-[#E9F9B2] text-[#E9F9B2] mt-10 p-6">
 
-          
-                <span className="text-6xl">01</span>
-                <span>
-                    <h1>
-                        Oaxaca,Mexico
-                    </h1>
-                    <p>March 12 - March 25</p>
-                    <p>
-                        for mole,markets,and Monte Alban
-                    </p>
-                </span>
-           
-            
-        </div>
+  <div className="grid grid-cols-[80px_1fr_200px] items-start gap-6 md:text-4xl text-xl">
+
+    {/* Number */}
+    <div className="text-6xl">
+      {props.number}
+    </div>
+
+    {/* Text */}
+    <div className="flex flex-col gap-2">
+      <h1>{props.city}</h1>
+      <p>{props.date}</p>
+      <p>{props.details}</p>
+    </div>
+
+    {/* Image */}
+    <div className="hidden md:block">
+      <img 
+        src={props.image} 
+        alt="unable to load" 
+        className="w-[200px] h-[130px] object-cover"
+      />
+    </div>
+
+  </div>
+
+</div>
         </>
     )
 }

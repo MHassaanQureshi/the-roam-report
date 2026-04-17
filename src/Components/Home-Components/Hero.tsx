@@ -1,7 +1,8 @@
 import "./hero.css"
+import "../Navbar.css"
 export default function Hero(){
     return(
-         <div className="bg-[#C6DCFF] h-[750px] w-full flex items-center mt-5">
+         <div className="bg-[#C6DCFF] h-[750px] w-full flex items-center relative float">
      <div className="w-full h-full flex flex-col mt-50 gap-10">
       <h1 className="text-[#0053D4] text-4xl inline-flex flex-col justify-center font-extrabold items-center leading-none p-0 space-y-0">
   The Roam
