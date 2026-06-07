@@ -8,7 +8,7 @@ export default function HomeFooter(){
                 <p className="text-3xl font-bold">End of the trail</p>
             </span>
             <span>
-                <h1 className="text-5xl font-extrabold flex flex-col text-center">Less rush. <span>More</span> <span>wonder.</span></h1>
+                <h1 className="text-5xl font-extrabold flex flex-col text-center md:flex-row">Less rush. <span>More</span> <span>wonder.</span></h1>
 
             </span>
             <span>

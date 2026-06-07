@@ -3,6 +3,7 @@ import "./index.css"
 import { Routes , Route } from "react-router-dom"
 import HomePage from "./pages/HomePage"
 import AboutPage from "./pages/AboutPage"
+import ArticlesPage from "./pages/ArticlesPage"
 
 export default function App(){
   return(
@@ -14,6 +15,11 @@ export default function App(){
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/pages/AboutPage.tsx" element={<AboutPage />} />
+      <Route path="/pages/ArticlesPage.tsx" element={<ArticlesPage />} />
+        {/* <Route
+          path="/article/:id"
+          element={<ArticleDetails />}
+        /> */}
     </Routes>
     </>
   )
